@@ -10014,13 +10014,13 @@ p {
   }
 }
 ::-moz-selection {
+  color: white;
   background: #59dceb;
-  text-shadow: none;
 }
 
 ::selection {
+  color: white;
   background: #59dceb;
-  text-shadow: none;
 }
 
 img::-moz-selection {
