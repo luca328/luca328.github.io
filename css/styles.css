@@ -3077,7 +3077,6 @@ input[type=button].btn-block {
   margin-left: 0.125rem;
 }
 .dropright .dropdown-toggle::after {
-  vertical-align: 0;
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -3107,7 +3106,6 @@ input[type=button].btn-block {
 }
 
 .dropleft .dropdown-toggle::before {
-  vertical-align: 0;
   display: inline-block;
   margin-right: 0.255em;
   vertical-align: 0.255em;
