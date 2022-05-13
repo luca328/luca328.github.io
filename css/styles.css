@@ -4205,6 +4205,7 @@ input[type=button].btn-block {
 .navbar-expand > .container-md,
 .navbar-expand > .container-lg,
 .navbar-expand > .container-xl {
+  flex-wrap: nowrap;
   padding-right: 0;
   padding-left: 0;
 }
@@ -4223,9 +4224,7 @@ input[type=button].btn-block {
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
 .navbar-expand > .container-lg,
-.navbar-expand > .container-xl {
-  flex-wrap: nowrap;
-}
+
 .navbar-expand .navbar-collapse {
   display: flex !important;
   flex-basis: auto;
