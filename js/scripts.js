@@ -44,9 +44,9 @@
     // Collapse Navbar
 	var navbarCollapse = function () {
 		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			document.getElementById("mainNav).addClass("navbar-shrink");
+			document.getElementById("mainNav").addClass("navbar-shrink");
 		} else {
-			document.getElementById("mainNav).removeClass("navbar-shrink");
+			document.getElementById("mainNav").removeClass("navbar-shrink");
 		}
 	};
     // Collapse now if page is not at top
