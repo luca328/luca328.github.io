@@ -10098,14 +10098,30 @@ img::selection {
     margin-right: 0;
   }
 }
+
+.bg-image {
+  /* The image used */
+  background-image: url("../assets/img/EECOgl4XUAAae9x.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #9e0606;
   opacity:0.8;
-  background-image: url("../assets/img/EECOgl4XUAAae9x.jpg");
-  filter: blur(8px);
   background-repeat: no-repeat;
   background-attachment: scroll;
   height: 100%;
