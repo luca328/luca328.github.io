@@ -10107,7 +10107,6 @@ header.masthead {
   color: #9e0606;
   opacity:0.8;
   background-image: url("../assets/img/EECOgl4XUAAae9x.jpg");
-  backdrop-filter: blur(8px); 
   background-repeat: no-repeat;
   background-attachment: scroll;
   height: 100%;
@@ -10115,6 +10114,23 @@ header.masthead {
   background-size: cover;
   background-color:rgba(31,47,72);
 }
+
+header.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/EECOgl4XUAAae9x.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
