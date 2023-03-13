@@ -10105,6 +10105,7 @@ header.masthead {
   color: #9e0606;
   opacity:0.8;
   background-image: url("../assets/img/EECOgl4XUAAae9x.jpg");
+  filter: blur(8px);
   background-repeat: no-repeat;
   background-attachment: scroll;
   height: 100%;
