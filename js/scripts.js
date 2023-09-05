@@ -54,3 +54,27 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 }) // End of use strict
+
+// Remplacer l'URL par l'URL de l'API Sea Shepherd
+const apiUrl = 'https://api.seashepherdnews.com/latest';
+
+// Fonction pour récupérer les données de l'API
+async function fetchSeaShepherdNews() {
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        // Parcourir les données et afficher les nouvelles
+        const newsList = document.getElementById('newsList');
+        data.forEach(news => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<a href="${news.link}" target="_blank">${news.title}</a>`;
+            newsList.appendChild(listItem);
+        });
+    } catch (error) {
+        console.error('Une erreur s\'est produite lors de la récupération des nouvelles :', error);
+    }
+}
+
+// Appeler la fonction pour récupérer les nouvelles au chargement de la page
+fetchSeaShepherdNews();

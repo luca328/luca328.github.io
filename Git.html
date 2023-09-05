@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <script src="js/scripts.js"></script>
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
@@ -33,15 +34,13 @@
                 </div>
             </div>
         </nav>
-	<!-- Masthead-->
-        <header class="masthead">
-        
-        </header>
         <!-- Services-->
         <section class="page-section bg-light" id="veille">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Veille technologique</h2>
+                    <h1>Dernières nouvelles de Sea Shepherd</h1>
+                    <ul id="newsList"></ul>
 					</div>
                 <div class="text-left">
 				<h3 class="my-3">Git</h3>
@@ -49,7 +48,7 @@
 				<p class="text-muted">Bug fix</p>
 				<ul>
 					<li>"diff-tree --stdin" est cassé depuis environ un an, mais la version 2.36 l'a cassé encore plus en interrompant l'exécution de la commande avec <pathspec>, qui à son tour a cassé "gitk" et s'est fait remarquer. Cela a été corrigé en alignant son comportement sur celui de "log".</li>
-					<li>"git show <commit1> <commit2>... -- <pathspec>" a perdu le pathspec lors de l'affichage du deuxième commit et des suivants, ce qui a été corrigé.</li>
+					<li>"git show < commit1> < commit2>... -- < pathspec>" a perdu le pathspec lors de l'affichage du deuxième commit et des suivants, ce qui a été corrigé.</li>
 					<li>Correction de régression pour 2.36 où "git name-rev" commençait parfois à référencer les Strings après leur libération.</li>
 					</br>
 					<a class="btn btn-primary" href="https://docs.python.org/release/3.9.13/whatsnew/changelog.html">Changelog</a>
@@ -60,7 +59,6 @@
 			</div>
             </div>
 		</section>
-
     <!-- Footer-->
     <footer class="footer py-4">
         <div class="container">
