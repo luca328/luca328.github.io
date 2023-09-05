@@ -5374,7 +5374,6 @@ a.close.disabled {
   position: fixed;
   top: 0;
   left: 0;
-  /* z-index: 1050; */
   display: none;
   width: 100%;
   height: 100%;
@@ -5388,6 +5387,7 @@ a.close.disabled {
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
+  z-index: 1050;
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
@@ -10253,6 +10253,8 @@ header.masthead .masthead-heading {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
+
+.portfolio-modal { z-index: 1050 }
 
 .timeline {
   position: relative;
