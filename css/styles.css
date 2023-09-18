@@ -338,7 +338,7 @@ select {
   top: 100px;
   left: 20px;
   height: 5px;
-  width: 150px;
+  width: 130px;
 }
 
 .emptybar-carousel {
@@ -359,7 +359,7 @@ select {
 }
 
 .card-carousel:hover .filledbar-carousel {
-  width: 150px;
+  width: 130px;
   transition: 0.4s ease-out;
 }
 
